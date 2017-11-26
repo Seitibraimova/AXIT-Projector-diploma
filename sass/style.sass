@@ -1,0 +1,22 @@
+$dark-gray1-color: #333b46
+$progress-bar: #e1e4e9
+
+$max-w: 1145
+
+@mixin media($width)
+	@media screen and (max-width: $width + "px")
+		@content
+
+@import core/reset.sass
+@import core/common.sass
+@import layout/header.sass
+@import blocks/social-top.sass
+@import blocks/tab.sass
+@import blocks/information-top.sass
+@import blocks/information-bottom.sass
+@import blocks/advantages.sass
+@import blocks/pricing.sass
+@import blocks/feedbacks.sass
+@import blocks/design-download.sass
+@import blocks/contact.sass
+@import layout/footer.sass

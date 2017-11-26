@@ -1,0 +1,59 @@
+.advantages 
+	padding: 100px 0
+
+.advantages-introdaction p 
+	margin: 0
+
+.advantages-list 
+    @extend .clearfix
+
+.advantage 
+	position: relative
+	float: left
+	width: 31.79%
+	padding-top: 179px
+
+.craft 
+	margin: 0 20px
+	box-sizing: border-box
+
+.advantage::after 
+	position: absolute
+	content: ""
+	top: 70px
+    left: 0px
+	width: 70px
+	height: 70px
+	margin-left: 50%
+	transform: translate(-50%, 0)
+	border: 2px solid #ff8b38
+	border-radius: 37px
+
+.advantage::before 
+	position: absolute
+	top: 97px
+    left: 0
+    margin-left: 50%
+	transform: translate(-50%, 0)
+	font-family: "FontAwesome"
+	font-size: 32px
+	color: #ff8b38
+
+.design::before 
+	content: "\f0eb"
+
+.craft::before 
+	content: "\f11c"
+
+.customization::before 
+	content: "\f0e7"
+
+.advantage-title 
+	margin: 0
+	text-transform: capitalize
+	text-align: center
+
+.advantage-description 
+	margin: 0
+	padding-top: 25px
+	text-align: center

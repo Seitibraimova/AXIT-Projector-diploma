@@ -1,14 +1,13 @@
 .feedbacks 
-	padding: 110px 20px 100px 20px
+	padding: 110px 0 100px 0
 
 .feedback 
-	width: 25%
+	width: 28%
 	float: left
 	padding-top: 55px
 
-.feedback:nth-child(2n) 
-	margin: 0 120px
-	box-sizing: border-box
+	&:nth-child(2n) 
+		margin: 0 7%
 
 .feedback-text 
 	position: relative
@@ -51,3 +50,17 @@
 
 .position 
 	display: block
+
+@media screen and (max-width: 950px)
+	.position 
+		display: block
+
+@media screen and (max-width: 670px)
+	.feedback
+		float: none
+		width: 90%
+		margin: 0 auto
+	
+	.feedback:nth-child(2n)
+		margin: 0 auto
+		

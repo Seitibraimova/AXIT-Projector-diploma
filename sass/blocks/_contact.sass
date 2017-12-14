@@ -1,8 +1,8 @@
 .contact 
 	padding: 110px 0 81px 0
 
-.contact-form 
-	padding-top: 80px
+	&-form 
+		padding-top: 80px
 
 .contact-form1 
 	float: left
@@ -20,18 +20,31 @@
 
 	box-sizing: border-box
 
-.contact-form-comment 
-// не сработал этот класс?????
+.contact-form-comment
 	width: 100%
 	padding-left: 14px
 	margin-bottom: 43px
 	color: #bdbdbd
-    border-color: transparent
-    border-bottom: 1px solid #bdbdbd
-	box-sizing: border-box
+	border-color: transparent
+	border-bottom: 1px solid #bdbdbd
 
 .contact .orange 
 	width: 148px
 	display: block
 	margin: 0 auto
 	box-sizing: border-box
+
+
+@media screen and (max-width: 905px)
+	.contact .orange
+		max-width: 131px
+
+@media screen and (max-width: 730px)
+	.contact-form1, 
+	.contact-form2
+		float: none
+		width: 80%
+		margin: 0 auto
+
+
+	

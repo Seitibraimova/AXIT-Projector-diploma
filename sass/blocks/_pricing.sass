@@ -2,7 +2,7 @@
 	padding: 110px 0 100px 0
 
 .price-options
-    @extend .clearfix
+	@extend .clearfix
 
 .price-option 
 	float: left
@@ -10,7 +10,6 @@
 	margin-top: 115px
 	text-align: center
 	color: #ffffff
-	background-color: #333333
 
 .profesional 
 	margin: 0 20px
@@ -44,7 +43,8 @@
 	text-transform: capitalize
 
 .price-option-top 
-	border-bottom: 5px solid #ff8b38	
+	border-bottom: 5px solid #ff8b38
+	background: #313131	
 
 .profesional .price-option-top 
 	border-bottom: none
@@ -65,3 +65,23 @@
 .package-components td 
 	padding: 15px 0
 	border-bottom: 1px solid #eeeeee
+
+@media screen and (max-width: 905px)
+	.price-option 
+		float: none
+		width: 65%
+		margin: 20px auto
+	
+	.price-option-title 
+		padding: 8px 0
+		font-size: 16px
+		line-height: 19px
+	
+	.money 
+		padding: 10px 0 10px 0
+		font-size: 65px
+		line-height: 66px
+	
+	.package-components td 
+		padding: 7px 0
+	

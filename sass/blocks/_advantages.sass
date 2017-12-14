@@ -5,7 +5,7 @@
 	margin: 0
 
 .advantages-list 
-    @extend .clearfix
+	@extend .clearfix
 
 .advantage 
 	position: relative
@@ -21,7 +21,7 @@
 	position: absolute
 	content: ""
 	top: 70px
-    left: 0px
+	left: 0
 	width: 70px
 	height: 70px
 	margin-left: 50%
@@ -32,8 +32,8 @@
 .advantage::before 
 	position: absolute
 	top: 97px
-    left: 0
-    margin-left: 50%
+	left: 0
+	margin-left: 50%
 	transform: translate(-50%, 0)
 	font-family: "FontAwesome"
 	font-size: 32px
@@ -57,3 +57,23 @@
 	margin: 0
 	padding-top: 25px
 	text-align: center
+
+@media screen and (max-width: 905px)
+	.advantages 
+		padding: 40px 0
+	
+	.advantage 
+		float: none
+		width: 65%
+		margin: 0 auto
+		padding-top: 70px
+	
+	.advantage::before 
+		top: 29px
+		font-size: 18px
+	
+	.advantage::after 
+		top: 16px
+		width: 40px
+		height: 40px
+	

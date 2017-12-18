@@ -14,10 +14,17 @@
 		&-comment
 			width: 100%
 			padding-left: 14px
-			margin-bottom: 43px
-			color: #bdbdbd
+			margin: -35px 0 43px 0
+			color: black
 			border-color: transparent
 			border-bottom: 1px solid #bdbdbd
+
+			+media(730)
+				margin: 0 0 43px 0
+
+	& textarea 
+		@extend .input-gl 
+
 
 	& .orange 
 		width: 148px

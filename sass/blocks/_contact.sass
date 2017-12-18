@@ -4,6 +4,32 @@
 	&-form 
 		padding-top: 80px
 
+		+media(730)
+			padding-top: 35px
+	
+		& input 
+			width: 100%
+			margin-bottom: 30px
+
+		&-comment
+			width: 100%
+			padding-left: 14px
+			margin-bottom: 43px
+			color: #bdbdbd
+			border-color: transparent
+			border-bottom: 1px solid #bdbdbd
+
+	& .orange 
+		width: 148px
+		display: block
+		margin: 0 auto
+
+		+media(905)
+			max-width: 131px
+
+		+media(730)
+			max-width: 111px
+
 .contact-form1 
 	float: left
 	width: 40.57%
@@ -13,31 +39,6 @@
 .contact-form2 
 	float: right 
 	width: 50%
-
-.contact-form input 
-	width: 100%
-	margin-bottom: 30px
-
-	box-sizing: border-box
-
-.contact-form-comment
-	width: 100%
-	padding-left: 14px
-	margin-bottom: 43px
-	color: #bdbdbd
-	border-color: transparent
-	border-bottom: 1px solid #bdbdbd
-
-.contact .orange 
-	width: 148px
-	display: block
-	margin: 0 auto
-	box-sizing: border-box
-
-
-@media screen and (max-width: 905px)
-	.contact .orange
-		max-width: 131px
 
 @media screen and (max-width: 730px)
 	.contact-form1, 

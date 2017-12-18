@@ -7,42 +7,79 @@
 	padding-right: 102px
 	box-sizing: border-box
 
-.slides-tab-btn 
-	display: block
-	min-width: 102px
-	padding: 47.5px 36px
-	text-transform: uppercase
-	color: #ffffff
-	font-size: 15px
-	font-weight: 400
-	line-height: 20px
-	background-color: #717171
-	box-sizing: border-box
-	border-bottom: 1px solid white
+	+media(905)
+		width: 15%
+		padding-top: 10px
+		padding-right: 50px
 
-.slides-tab .orange 
-	background-color: #ff8b38
+	+media(550)
+		float: none
+		width: 100% 
+		padding: 0
+		font-size: 0
+		text-align: center
 
-.slides-tab-btn:last-child 
-	border-bottom: none
+	&-btn 
+		display: block
+		min-width: 102px
+		padding: 47.5px 36px
+		text-transform: uppercase
+		color: #ffffff
+		font-size: 15px
+		font-weight: 400
+		line-height: 20px
+		background-color: #717171
+		box-sizing: border-box
+		border-bottom: 1px solid white
+
+		+media(905)
+			min-width: 68px
+			padding: 20px 20px
+			font-size: 10px
+
+		+media(550)
+			display: inline-block
+			border-right: 1px solid white
+
+		
+	& .orange 
+		background-color: #ff8b38
+
+		+media(730)
+			padding: 20px 20px
+
+	&:last-child 
+		border-bottom: none
 	
 .slides-description 
 	float: left
 	width: 52.4%
 
-.slides-description-title 
-	margin: 0 
-	padding: 4px 0 49px 0
+	+media(905)
+		text-align: center
+		width: 80%
 
-.slides-description-text 
-	margin: 0
-	padding: 0 0 15px 0
+	+media(550)
+		float: none
+		width: 100%
+		margin: 0 auto 
 
-.slides-description-text:nth-child(3n) 
-	padding-bottom: 48px
+	&-title 
+		margin: 0 
+		padding: 4px 0 49px 0
 
-.slides-description .btn-gl 
-	margin-bottom: 22px
+		+media(905)
+			padding: 4px 0 20px 0;
+
+	&-text 
+		margin: 0
+		padding: 0 0 15px 0
+
+		&:nth-child(3n) 
+			padding-bottom: 48px
+
+			+media(905)
+				padding-bottom: 25px	
 
 .slides-picture 
 	float: right
@@ -50,42 +87,5 @@
 	padding: 23px 0 55px 0
 	box-sizing: border-box
 
-@media screen and (max-width: 905px)
-	.slides-tab-btn 
-		min-width: 68px
-		padding: 20px 20px
-		font-size: 10px   
-
-@media screen and (max-width: 840px)
-	.slides-picture 
-		display: none
-
-	.slides-description
-		width: 75%
-
-@media screen and (max-width: 730px)
-	.slides-tab
-		width: 25%
-	
-	.slides-description
-		width: 75%
-		text-align: center
-	
-	.slides-picture
-		display: none
-
-@media screen and (max-width: 500px)
-	.social-top1,
-	.social-top2
-		float: none
-		width: 100%
-		padding: 10px 0
-	
-	.social-top1 p
-		padding-bottom: 0
-	
-	.social-top2
-		font-size: 20px
-		letter-spacing: 20px
-
-	
+	+media(905)
+		display: none	

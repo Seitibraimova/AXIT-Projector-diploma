@@ -1,5 +1,8 @@
-.feedbacks 
+.feedbaks 
 	padding: 110px 0 100px 0
+
+.feedbaks-list
+	@extend .clearfix
 
 .feedback 
 	width: 28%
@@ -9,58 +12,49 @@
 	&:nth-child(2n) 
 		margin: 0 7%
 
-.feedback-text 
-	position: relative
-	margin: 0
-	padding: 24px 12px 40px 12px
-	border-radius: 10px
-	font-style: italic
-	background-color: #f5f5f5
+	+media(700)
+		float: none
+		width: 90%
+		margin: 0 auto
 
-.feedback-text::after 
-	position: absolute
-	content: ""
-	bottom: -20px
-	left: 30px
-	width: 0 
-	height: 0 
-	border-left: 9px solid transparent 
-	border-right: 9px solid transparent 
-	border-top: 20px solid #f5f5f5
+		&:nth-child(2n)
+				margin: 0 auto
+
+	&-text 
+		position: relative
+		margin: 0
+		padding: 24px 12px 40px 12px
+		border-radius: 10px
+		font-style: italic
+		background-color: #f5f5f5
+
+		&::after 
+			position: absolute
+			content: ""
+			bottom: -20px
+			left: 30px
+			width: 0 
+			height: 0 
+			border-left: 9px solid transparent 
+			border-right: 9px solid transparent 
+			border-top: 20px solid #f5f5f5
 
 .feedback-author 
 	position: relative
 	padding: 30px 0 10px 88px
 
-.feedback-author::before 
-	position: absolute
-	content: ""
-	top: 25px
-	left: 0
-	width: 70px
-	height: 70px
-	background: url('../image/avatar.jpg') no-repeat
+	&::before 
+		position: absolute
+		content: ""
+		top: 25px
+		left: 0
+		width: 70px
+		height: 70px
+		background: url('../image/avatar.jpg') no-repeat
 
-.feedback-author-name 
-	display: block
-	color: #333333
-	font-size: 20px
-	line-height: 26px
-	font-weight: 700
-
-.position 
-	display: block
-
-@media screen and (max-width: 950px)
-	.position 
+	&-name 
 		display: block
-
-@media screen and (max-width: 670px)
-	.feedback
-		float: none
-		width: 90%
-		margin: 0 auto
-	
-	.feedback:nth-child(2n)
-		margin: 0 auto
-		
+		color: #333333
+		font-size: 20px
+		line-height: 26px
+		font-weight: 700

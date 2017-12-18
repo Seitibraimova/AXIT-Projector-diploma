@@ -3,10 +3,16 @@
 	width: 43.93%
 	padding: 0 17px
 
+	+media(950)
+		padding-top: 62px
+
 .information-top-description 
 	float: right
 	width: 56.06%
 	padding-left: 160px
+
+	+media(950)
+		padding-left: 50px
 
 .info-picture 
 	box-shadow: 0 20px 39px 2px #86878b
@@ -19,24 +25,29 @@
 	position: relative
 	padding-left: 70px
 
-.illustrative-block::before 
-	content: ""
-	position: absolute
-	top: 24px
-	left: 0
-	// почему по левому углу не становится?ч?????
-	width: 40px
-	height: 40px
-	border: 2px solid #ff8b38
-	border-radius: 22px
+	&::before 
+		content: ""
+		position: absolute
+		top: 24px
+		left: 0
+		width: 40px
+		height: 40px
+		border: 2px solid #ff8b38
+		border-radius: 22px
 
-.illustrative-block::after 
-	position: absolute
-	top: 36px
-	left: 15px
-	font-size: 16px
-	font-family: "FontAwesome"
-	color: #ff8b38
+	&::after 
+		position: absolute
+		top: 36px
+		left: 15px
+		font-size: 16px
+		font-family: "FontAwesome"
+		color: #ff8b38
+
+	&-title 
+		margin: 0
+		padding-top: 20px
+		font-weight: 600
+		color: #212121
 
 .upload::after 
 	content: '\f0ee'
@@ -44,39 +55,25 @@
 .download::after 
 	content: "\f0ed"
 
-.illustrative-block-title 
-	margin: 0
-	padding-top: 20px
-	font-weight: 600
-	color: #212121
-
 .information-top,
 .information-bottom 
 	padding: 100px 0
+
+	+media(950)
+		padding: 35px 0
 
 .information-bottom-description 
 	float: left
 	width: 56.06%
 	padding-right: 118px
 
+	+media(950)
+		padding-right: 50px
+
 .information-bottom-picture 
 	float: right
 	width: 43.93%
 	padding: 0 17px
-
-@media screen and (max-width: 950px)
-	.information-top,
-	.information-bottom 
-		padding: 35px 0
-
-	.information-top-description
-		padding-left: 50px
-
-	.information-bottom-description 
-   		padding-right: 50px
-
-	.information-top-picture 
-		padding-top: 62px
 
 @media screen and (max-width: 700px)
 	.information-top-picture,
@@ -86,22 +83,8 @@
 	.information-top-description,
 	.information-bottom-description 
 		float: none
-		width: 90%
-		margin: 0 auto
-		padding-left: 0
-
-@media screen and (max-width: 670px)
-	.information-top-picture,
-	.information-bottom-picture 
-		display: none
-
-	.information-top-description,
-	.information-bottom-description 
-		float: none
-		width: 90%
-		margin: 0 auto
-
-@media screen and (max-width: 500px)
-	.information-top-description
+		width: 100%
    		min-width: 250px
-	
+		padding-left: 0
+		padding-right: 0
+

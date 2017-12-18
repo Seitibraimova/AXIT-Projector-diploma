@@ -11,17 +11,75 @@
 	text-align: right
 	width: 1026*100%/1105 
 
-	.menu_item 
+	+media(700)
+		float: none
+		display: block
+		width: 100%
+
+	&-item 
 		display: inline-block
 		vertical-align: top
 
-.menu_link 
+		+media(700)
+				display: block
+
+	&-link 
 		display: block
 		padding: 30px 24px
 		opacity: 0.69
 		color: #ffffff
 		font-family: 'Open Sans Condensed', sans-serif
 		text-decoration: none
+		
+		+media(905)
+			padding: 25px 18px
+
+		+media(700)
+			text-align: center
+			padding: 10px 0
+
+		&:hover
+			border-bottom: 1px solid white
+			opacity: 0.3
+
+			+media(700)
+				border-bottom: none
+
+		&:focus
+			color: #ff8b38
+
+#nav-drop-down
+	display: none
+
+.menu-drop-down
+	display: none
+	position: absolute
+	top: 15px
+	right: 10px
+	font-family: "Font Awesome"
+	font-size: 23px
+	cursor: pointer
+
+	+media(700)
+		display: block
+
+.fa-bars
+	display: none
+
+	+media(700)
+		display: block
+		color: #ff8b38
+
+#nav-drop-down + .menu
+
+	+media(700)
+		display: none
+
+#nav-drop-down:checked + .menu
+
+	+media(700)
+		display: block
+		padding-top: 47px;
 
 .under-navigation
 	padding: 109px 0 140px 0
@@ -29,10 +87,24 @@
 	background: #1a2227 url('../pic/header-bg.jpg') 50% 50% no-repeat
 	background-size: cover
 
+	+media(730)
+		text-align: center
+
 .under-navigation1 
 	float: left
 	width: 45%
-	padding-right: 30px   
+	padding-right: 30px 
+
+	+media(730)
+		float: none
+		width: 100%
+		margin: 0 auto
+		padding-right: 0 
+
+.logo-big
+
+	+media(500)
+		display: none
 
 .description 
 	margin: 0
@@ -42,99 +114,67 @@
 	float: right
 	width: 50%
 
+	+media(730)
+		float: none
+		width: 100%
+		margin: 0 auto
+		padding-right: 0 
 
 .subscribe 
-	width: 72.3%
-	min-width: 350px
+	width: 60%
+	min-width: 310px
 	margin: 30px 0 0 auto
 	background-color: #ffffff
 
-.subscribe_title 
-	width: 100%
-	margin: 0
-	padding: 12px 15px 9px 15px
-	color: #333333
-	font-size: 20px
-	line-height: 32px
-	font-weight: 700
-	text-transform: capitalize
-	background-color: #f5f5f5
-	text-align: center
+	+media(730)
+		width: 50%;
+		margin: 30px auto 0 auto
 
-.subscribe-form 
-	width: 100%
-	padding: 0 45px 49px 45px
-	box-sizing: border-box
+	+media(500)
+		min-width: 250px
 
-.subscribe-title-orange 
-	text-transform: uppercase
-	color: #ff8b38
+	&-title 
+		width: 100%
+		margin: 0
+		padding: 12px 15px 9px 15px
+		color: #333333
+		font-size: 20px
+		line-height: 32px
+		font-weight: 700
+		text-transform: capitalize
+		background-color: #f5f5f5
+		text-align: center
 
-.subscribe-form input 
-	width: 100%
-	margin: 44px 0 6px 0
+		+media(730)
+			font-size: 18px
+			line-height: 23px
 
-.subscribe-btn 
-	padding: 18px 0
-	text-align: center
+		&-orange 
+			text-transform: uppercase
+			color: #ff8b38
 
-@media screen and (max-width: 905px)
-	.menu_link 
-		padding: 25px 18px
+	&-form 
+		width: 100%
+		padding: 0 45px 49px 45px
+		box-sizing: border-box
 
-@media screen and (max-width: 730px) 
-	.under-navigation1,
-	.under-navigation2 
-		float: none
-		width: 80%
-	
-	.under-navigation1 
-		margin: 0 auto
-		padding-right: 0
-	
-	.subscribe-title 
-		font-size: 18px
-		line-height: 23px
-	
-	.subscribe-form 
-		padding: 0px 45px 25px 31px
-	
-	.subscribe-form input 
-		margin: 15px 0 6px 0
-	
-	.subscribe-btn 
-		padding: 10px 0
+		+media(730)
+			padding: 0px 45px 25px 31px
 
-@media screen and (max-width: 730px)
-	.under-navigation1,
-	.under-navigation2
-		float: none
-		width: 80%
-	
-	.under-navigation1
-		margin: 0 auto
-		padding-right: 0
-	
-	.subscribe-title
-		font-size: 18px
-		line-height: 23px
-	
-	.subscribe-form
-		padding: 0px 45px 25px 31px
-	
-	.subscribe-form input
-		margin: 15px 0 6px 0
-	
-	.subscribe-btn
-		padding: 10px 0
+		& input 
+			width: 100%
+			margin: 44px 0 6px 0
 
-@media screen and (max-width: 500px)
-	.logo-big
-		display: none 
+			+media(730)
+				margin: 15px 0 6px 0
 
-	.subscribe
-		min-width: 250px	
-	
+	&-btn 
+		padding: 18px 0
+		text-align: center
 
+		&:hover
+			opacity: 0.7
 
-	
+		+media(730)
+			padding: 10px 0
+

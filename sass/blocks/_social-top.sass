@@ -2,35 +2,69 @@
 	border-bottom: 2px solid #cccccc
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.38)
 
+	+media(700)
+		text-align: center
+
 .social-top1 
 	float: left
 	width: 39.85%
 
-.social-top1 h2 
-	margin: 0
-	padding: 15px 0 9px 0
+	+media(950)
+		width: 50%
+	
+	+media(700)
+		float: none
+		width: 100%
+		padding: 10px 0
 
-.social-top1 p 
-	margin: 0
-	padding-bottom: 20px
+	& h2 
+		margin: 0
+		padding: 15px 0 9px 0
+
+	& p 
+		margin: 0
+		padding-bottom: 20px
+
+		+media(700)
+			padding-bottom: 0
 
 .social-top2 
 	float: right
 	width: 60.14%
-	padding: 31px 0
 	text-align: center
-	color: #cccccc
-	font-family: "Font Awesome"
-	font-size: 48px
-	letter-spacing: 55px
 
-@media screen and (max-width: 950px)
-	.social-top1
+	+media(950)
 		width: 50%
-	
-	.social-top2
-		width: 50%
-		font-size: 38px
-		letter-spacing: 20px
-	
+
+	+media(700)
+		float: none
+		width: 100%
+
+	& a
+		display: inline-block
+		padding: 31px 0
+		color: #cccccc
+		font-family: "Font Awesome"
+		font-size: 48px
+		letter-spacing: 50px
+
+		&:hover
+			color: #ff8b38
+
+		&:active
+			transform: scaleX(1.1)
+
+		&:focus
+			opacity: 0.3 
+
+		+media(980)
+			letter-spacing: 20px
+			font-size: 38px
+
+		+media(700)
+			padding: 10px 0
+			font-size: 20px
+			letter-spacing: 20px
+
+
 	

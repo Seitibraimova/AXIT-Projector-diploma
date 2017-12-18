@@ -8,15 +8,27 @@ footer
 	font-size: 12px
 
 .social-footer 
-	color: #cccccc
-	font-family: "Font Awesome"
-	font-size: 24px
-	letter-spacing: 25px
+	font-size: 0
 
-@media screen and (max-width: 670px)
-	.social-footer
-		font-size: 15px
-		letter-spacing: 12px
+	& a
+		display: inline-block
+		color: #cccccc
+		font-family: "Font Awesome"
+		font-size: 24px
+		letter-spacing: 25px
+
+		&:hover
+			color: #ff8b38
+
+		&:active
+			transform: scaleX(1.1)
+
+		&:focus
+			opacity: 0.3 
+
+		+media(700)
+			font-size: 20px
+			letter-spacing: 20px
 
 @media screen and (max-width: 905px)
 	body 
@@ -31,14 +43,14 @@ footer
 	.tab,
 	.advantages,
 	.price,
-	.feedbacks,
+	.feedbaks,
 	.design-download,
 	.contact 
 		padding: 35px 0 35px 0
 
 	.small-title-gl 
 		font-size: 16px
-
+		
 @media screen and (max-width: 730px) 
 	.btn-white-gl,
 	.orange 

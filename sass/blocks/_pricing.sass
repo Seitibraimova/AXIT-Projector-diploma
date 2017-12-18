@@ -1,29 +1,45 @@
-.price 
-	padding: 110px 0 100px 0
-
-.price-options
-	@extend .clearfix
-
-.price-option 
-	float: left
-	width: 31.79%
-	margin-top: 115px
-	text-align: center
-	color: #ffffff
-
 .profesional 
 	margin: 0 20px
 	margin-top: 80px
 	box-sizing: border-box
 
-.price-option-title 
-	margin: 0
-	padding: 15px 0
-	font-size: 20px
-	font-weight: 700
-	line-height: 24px
-	border-bottom: 1px solid #bdbdbd
+.price 
+	padding: 110px 0 100px 0
 
+	&-options
+		@extend .clearfix
+
+	&-option 
+		float: left
+		width: 31.79%
+		margin-top: 115px
+		text-align: center
+		color: #ffffff
+
+		+media(905)
+			float: none
+			width: 65%
+			margin: 20px auto
+
+		+media(550)
+			width: 90%
+
+		&-top 
+			border-bottom: 5px solid #ff8b38
+			background: #313131	
+
+		&-title 
+			margin: 0
+			padding: 15px 0
+			font-size: 20px
+			font-weight: 700
+			line-height: 24px
+			border-bottom: 1px solid #bdbdbd
+
+			+media(905)
+				padding: 8px 0
+				font-size: 16px
+				line-height: 19px
 .money 
 	display: block
 	padding: 32px 0 18px 0
@@ -31,6 +47,11 @@
 	font-size: 94px
 	line-height: 82px
 	font-weight: 700
+
+	+media(905)
+		padding: 10px 0 10px 0
+		font-size: 65px
+		line-height: 66px
 
 .dollor 
 	font-size: 35px
@@ -41,10 +62,6 @@
 	opacity: 0.5
 	font-style: italic
 	text-transform: capitalize
-
-.price-option-top 
-	border-bottom: 5px solid #ff8b38
-	background: #313131	
 
 .profesional .price-option-top 
 	border-bottom: none
@@ -62,26 +79,9 @@
 	background-color: white
 	border-collapse: collapse
 
-.package-components td 
-	padding: 15px 0
-	border-bottom: 1px solid #eeeeee
+	& td 
+		padding: 15px 0
+		border-bottom: 1px solid #eeeeee
 
-@media screen and (max-width: 905px)
-	.price-option 
-		float: none
-		width: 65%
-		margin: 20px auto
-	
-	.price-option-title 
-		padding: 8px 0
-		font-size: 16px
-		line-height: 19px
-	
-	.money 
-		padding: 10px 0 10px 0
-		font-size: 65px
-		line-height: 66px
-	
-	.package-components td 
-		padding: 7px 0
-	
+		+media(905)
+			padding: 7px 0	

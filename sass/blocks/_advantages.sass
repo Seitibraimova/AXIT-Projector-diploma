@@ -1,11 +1,21 @@
 .advantages 
 	padding: 100px 0
 
-.advantages-introdaction p 
-	margin: 0
+	+media(905)
+		padding: 40px 0
 
-.advantages-list 
-	@extend .clearfix
+	&-introdaction p 
+		margin: 0
+
+	&-list 
+		@extend .clearfix
+
+.craft 
+	margin: 0 20px
+	box-sizing: border-box
+
+	&::before 
+		content: "\f11c"
 
 .advantage 
 	position: relative
@@ -13,67 +23,59 @@
 	width: 31.79%
 	padding-top: 179px
 
-.craft 
-	margin: 0 20px
-	box-sizing: border-box
-
-.advantage::after 
-	position: absolute
-	content: ""
-	top: 70px
-	left: 0
-	width: 70px
-	height: 70px
-	margin-left: 50%
-	transform: translate(-50%, 0)
-	border: 2px solid #ff8b38
-	border-radius: 37px
-
-.advantage::before 
-	position: absolute
-	top: 97px
-	left: 0
-	margin-left: 50%
-	transform: translate(-50%, 0)
-	font-family: "FontAwesome"
-	font-size: 32px
-	color: #ff8b38
-
-.design::before 
-	content: "\f0eb"
-
-.craft::before 
-	content: "\f11c"
-
-.customization::before 
-	content: "\f0e7"
-
-.advantage-title 
-	margin: 0
-	text-transform: capitalize
-	text-align: center
-
-.advantage-description 
-	margin: 0
-	padding-top: 25px
-	text-align: center
-
-@media screen and (max-width: 905px)
-	.advantages 
-		padding: 40px 0
-	
-	.advantage 
+	+media(905)
 		float: none
 		width: 65%
 		margin: 0 auto
 		padding-top: 70px
+
+	+media(650)
+		width: 100%
+
+	&::after 
+		position: absolute
+		content: ""
+		top: 70px
+		left: 0
+		width: 70px
+		height: 70px
+		margin-left: 50%
+		transform: translate(-50%, 0)
+		border: 2px solid #ff8b38
+		border-radius: 37px
+
+		+media(905)
+			top: 16px
+			width: 40px
+			height: 40px
 	
-	.advantage::before 
-		top: 29px
-		font-size: 18px
-	
-	.advantage::after 
-		top: 16px
-		width: 40px
-		height: 40px
+	&::before 
+		position: absolute
+		top: 97px
+		left: 0
+		margin-left: 50%
+		transform: translate(-50%, 0)
+		font-family: "FontAwesome"
+		font-size: 32px
+		color: #ff8b38
+
+		+media(905)
+			top: 29px
+			font-size: 18px
+
+	&-title 
+		margin: 0
+		text-transform: capitalize
+		text-align: center
+
+	&-description 
+		margin: 0
+		padding-top: 25px
+		text-align: center
+
+.design::before 
+	content: "\f0eb"
+
+.customization::before 
+	content: "\f0e7"
 	
